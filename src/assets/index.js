@@ -1,62 +1,38 @@
 import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
-import github from "./github.png";
+// import mobile from "./mobile.png";
+// import web from "./web.png";
+import github from "./github.svg";
 import menu from "./menu.svg";
+// import menu_plus from "./menu_plus.svg";
 import close from "./close.svg";
 
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
-
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import windriver from "./company/windriver.svg";
+import windriverimg from "./portraits/windriverimg.svg";
+import valhalla from "./company/valhalla.svg";
+import valhallaimg from "./portraits/valhallaimg.svg";
+import rice from "./company/rice.svg";
+import riceimg from "./portraits/riceimg.svg";
+import i2 from "./company/i2.svg";
+import i2img from "./portraits/i2img.svg";
+import cqupt from "./company/cqupt.svg";
+import cquptimg from "./portraits/cquptimg.svg";
 
 export {
   logo,
-  backend,
-  creator,
-  mobile,
-  web,
+  // mobile,
+  // web,
   github,
   menu,
+  // menu_plus,
   close,
-  css,
-  docker,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  windriver,
+  windriverimg,
+  valhalla,
+  valhallaimg,
+  rice,
+  riceimg,
+  i2,
+  i2img,
+  cqupt,
+  cquptimg,
 };

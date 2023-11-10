@@ -5,31 +5,46 @@ import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
+    // represent standalone content which is typically visually distinct from the rest of the page
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+      // The class absolute indicates that this div is positioned relative to its nearest positioned ancestor, and inset-0 means it's stretched to cover its parent in all directions.
+        className={`absolute z-10 top-[120px] right-1.5 max-w-7xl mx-auto ${styles.paddingX} flex flex-col items-start gap-8`}
       >
-        <div className='flex flex-col justify-center items-center mt-5'>
+        <a href="https://github.com/yuanning6" target="_blank" rel="noopener noreferrer">
+          <img src="src/assets/github.svg" alt="github"/>
+        </a>
+        <a href="https://www.linkedin.com/in/yn06/" target="_blank" rel="noopener noreferrer">
+          <img src="src/assets/linkedin.svg" alt="linkedin"/>
+        </a>
+        <a href="https://www.instagram.com/evenlyniu/" target="_blank" rel="noopener noreferrer">
+          <img src="src/assets/instagram.svg" alt="ins"/>
+        </a>
+
+        {/* <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
-        </div>
+        </div> */}
 
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Adrian</span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
-          </p>
-        </div>
+        {/* <div> */}
+          {/* <h1 className={`${styles.heroHeadText} text-white`}> */}
+            {/* Hi, I'm <span className='text-[#915EFF]'>Evelyn</span> */}
+          {/* </h1> */}
+          {/* <p className={`${styles.heroSubText} mt-2 text-white-100`}> */}
+            {/* a line break only for screens of size "sm" and up */}
+            {/* I develop 3D visuals, user <br className='sm:block hidden' /> */}
+            {/* interfaces and web applications */}
+          {/* </p> */}
+        {/* </div> */}
       </div>
 
       <ComputersCanvas />
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+        {/* anchor link to a part of the webpage with id="about" */}
         <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-white flex justify-center items-start p-2'>
+            {/* a moving dot inside */}
             <motion.div
               animate={{
                 y: [0, 24, 0],
@@ -39,7 +54,7 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
+              className='w-3 h-3 rounded-full bg-white mb-1'
             />
           </div>
         </a>
