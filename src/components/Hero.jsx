@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+// import { socialLinks } from "../constants";
+import { github, instagram, linkedin } from "../assets";
 
 const Hero = () => {
   return (
@@ -12,30 +14,15 @@ const Hero = () => {
         className={`absolute z-10 top-[120px] right-1.5 max-w-7xl mx-auto ${styles.paddingX} flex flex-col items-start gap-8`}
       >
         <a href="https://github.com/yuanning6" target="_blank" rel="noopener noreferrer">
-          <img src="src/assets/github.svg" alt="github"/>
+          {/* <img src="src/assets/github.svg" alt="github"/> */}
+          <img src={github} alt="github"/>
         </a>
         <a href="https://www.linkedin.com/in/yn06/" target="_blank" rel="noopener noreferrer">
-          <img src="src/assets/linkedin.svg" alt="linkedin"/>
+          <img src={linkedin} alt="linkedin"/>
         </a>
         <a href="https://www.instagram.com/evenlyniu/" target="_blank" rel="noopener noreferrer">
-          <img src="src/assets/instagram.svg" alt="ins"/>
+          <img src={instagram} alt="ins"/>
         </a>
-
-        {/* <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
-        </div> */}
-
-        {/* <div> */}
-          {/* <h1 className={`${styles.heroHeadText} text-white`}> */}
-            {/* Hi, I'm <span className='text-[#915EFF]'>Evelyn</span> */}
-          {/* </h1> */}
-          {/* <p className={`${styles.heroSubText} mt-2 text-white-100`}> */}
-            {/* a line break only for screens of size "sm" and up */}
-            {/* I develop 3D visuals, user <br className='sm:block hidden' /> */}
-            {/* interfaces and web applications */}
-          {/* </p> */}
-        {/* </div> */}
       </div>
 
       <ComputersCanvas />

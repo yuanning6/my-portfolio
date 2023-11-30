@@ -77,7 +77,15 @@ const Navbar = () => {
                   } hover:text-secondary text-[18px] font-medium cursor-pointer`}
                   onClick={() => setActive(nav.title)}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  {nav.title === "About" || nav.title === "Contact" ?
+                    // For About and Contact, use anchor links
+                    <a href={`#${nav.id}`}>{nav.title}</a>
+                  :
+                    // For Projects and Playground, use React Router Link
+                    <Link to={nav.path}>{nav.title}</Link>
+                  }
+
+                  {/* <a href={`#${nav.id}`}>{nav.title}</a> */}
                 </li>
               ))}
             </ul>

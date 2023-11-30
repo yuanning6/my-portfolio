@@ -1,10 +1,13 @@
 import logo from "./logo.svg";
-// import mobile from "./mobile.png";
-// import web from "./web.png";
-import github from "./github.svg";
+// import github from "./github.svg";
 import menu from "./menu.svg";
-// import menu_plus from "./menu_plus.svg";
 import close from "./close.svg";
+
+import github from "./github.svg";
+import linkedin from "./linkedin.svg";
+import instagram from "./instagram.svg";
+
+import aboutcard from "./aboutcard.svg";
 
 import windriver from "./company/windriver.svg";
 import windriverimg from "./portraits/windriverimg.svg";
@@ -19,12 +22,12 @@ import cquptimg from "./portraits/cquptimg.svg";
 
 export {
   logo,
-  // mobile,
-  // web,
-  github,
   menu,
-  // menu_plus,
   close,
+  github,
+  linkedin,
+  instagram,
+  aboutcard,
   windriver,
   windriverimg,
   valhalla,

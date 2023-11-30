@@ -29,8 +29,7 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.svg')",
         "about-card": "url('/src/assets/aboutcard.svg')",
-        // #669944
-        // "hero-pattern": "linear-gradient(to bottom, #669944, #C8BEB8)",
+        constructing: "url('/src/assets/constructing.svg')",
       },
     },
   },
