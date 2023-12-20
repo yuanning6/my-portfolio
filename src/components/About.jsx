@@ -1,5 +1,6 @@
 import React from "react";
 import Tilt from "react-tilt";
+import { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -28,9 +29,22 @@ const ServiceCard = ({ index, title, icon }) => (
 );
 
 const About = () => {
+  const [counter, setCounter] = useState(0);
+
+    async function updateCounter() {
+        let response = await fetch('https://jaztmz3sriy4nlmi2dgbswkdbq0uzvin.lambda-url.us-east-1.on.aws/');
+        let data = await response.json();
+        setCounter(data);
+    }
+
+    useEffect(() => {
+        updateCounter();
+    }, []);
+
   return (
     <>
       <motion.div variants={textVariant()}>
+        <p className={styles.sectionSubText}>Views: {counter}</p>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
